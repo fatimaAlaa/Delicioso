@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'KalamRegular';
+    src: url('../fonts/Kalam-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsM';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+.nb{
+    /* position: fixed; */
+    width: 100%;
+    background-color: #0c0c0c;
+    z-index: 1;
+}
+.navbar {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: start;
+    padding-bottom: 20px;
+    align-items: center;
+    font-family: PoppinsM;
+    /* background-color: wheat; */
+}
+
+.img {
+    /* border: 1px solid yellow; */
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.navbar .links {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    text-align: center;
+    width: 80%;
+    /* border: 1px solid yellow; */
+
+}
+
+.navbar .link {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+
+.link:hover {
+    /* width: fit-content; */
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d8b564;
+    /* Add a border (line) under the link on hover */
+}
+
+
+.button {
+    text-align: end;
+}
+
+.button button {
+    margin-right: 35px;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 35px;
+    background-color: #c19e4f;
+    color: white;
+    font-family: PoppinsM;
+}
