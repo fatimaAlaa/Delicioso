@@ -15,7 +15,6 @@
     width: fit-content;
     color: white;
     /* margin: 10%; */
-    margin-top: 10%;
 }
 
 .cards {
@@ -24,6 +23,7 @@
     gap: 2%;
     width: 50%;
     font-family: PoppinsR;
+    margin-bottom: 10%;
 }
 
 .card {

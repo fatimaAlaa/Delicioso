@@ -128,10 +128,13 @@ export default function Food() {
                     matchingRecipes.map((recipe, index) => (
                         <div className='recipe' key={index}>
                             <div className='image'><img src={recipe.img} alt="" /></div>
-                            <h1>{recipe.Name}</h1>
-                            <p>{recipe.Description}</p>
-                            <button className='btn'>View Recipe</button>
-                            {/* <p>Ingredients: {recipe.ingredients.join(', ')}</p> */}
+                            <div className='recipeInfo'>
+                                <h1>{recipe.Name}</h1>
+                                <p>{recipe.Description}</p>
+                                <p>Ingredients: {recipe.ingredients.join(', ')}</p>
+                                <button className='btn'>View Recipe</button>
+                            </div>
+
                         </div>
                     ))
                 }

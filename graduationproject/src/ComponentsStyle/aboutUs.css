@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'PoppinsM';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsR';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+.aboutUs {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    height: fit-content;
+    padding: 30px;
+    /* border: 1px solid red; */
+    font-family: PoppinsR;
+}
+
+.aboutUs .aboutUstitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0% 3%;
+    /* margin-top: 10%; */
+}
+.aboutUs .aboutUstitle h1 {
+    font-size: 4rem;
+    margin: 0px;
+}
+
+.aboutUs .chef {
+    padding: 10px;
+    border: 1px solid green;
+    width: 50%;
+    height: 550px;
+    border-left: none;
+    border-bottom: none;
+}

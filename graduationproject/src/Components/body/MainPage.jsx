@@ -5,8 +5,8 @@ import Kitchen from './Kitchen';
 // import { Route } from 'react-router-dom';
 import bg from '../../Assests/Dish.jpg'
 import PopularRecipes from './Recipes';
-import Contact from './Contact';
 import { Route, Router } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 export default function MainPage() {
     return (
         <div>
@@ -26,8 +26,8 @@ export default function MainPage() {
                 </div>
             </div>
             <Kitchen />
-            <PopularRecipes />
-            <Contact />
+            {/* <PopularRecipes /> */}
+            <Footer />
         </div>
     )
 }

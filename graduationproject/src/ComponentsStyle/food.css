@@ -53,16 +53,25 @@
     margin: 30px;
 }
 .recipe{
-    padding: 10px;
+    /* padding: 15px; */
+    /* padding-left: 10px; */
+    padding-bottom: 15px;
+    border-radius: 0px;
     width: 400px;
-    height: 550px;
+    height: fit-content;
     border: 1px solid wheat;
-    border-radius: 10px;
-    text-align: center;
+    border-top: none;
+    /* border-radius: 10px; */
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    /* text-align: center; */
 }
-
+.recipe .recipeInfo{
+    padding: 5px 15px;
+}
 .recipe .image img{
-    border-radius: 20px;
+    /* padding: 0px; */
+    /* border-radius: 20px; */
     width: 100%;
     height: auto;
 }
@@ -76,6 +85,6 @@
     height: 40px;
     border-radius: 10px;
     background-color: #c84917;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     color: white;
 }

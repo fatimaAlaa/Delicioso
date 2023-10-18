@@ -66,11 +66,11 @@ const PopularRecipes = ({ recipes }) => {
           <p>Dolam</p>
           <button className='button'>View Recipe</button>
         </div>
-        <div className='cardd'>
+        {/* <div className='cardd'>
           <div className='image'><img src={food} alt="" /></div>
           <p>Dolam</p>
           <button className='button'>View Recipe</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

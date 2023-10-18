@@ -6,6 +6,7 @@ import MainPage from './Components/body/MainPage';
 import Kitchen from "./Components/body/Kitchen";
 import PopularRecipes from "./Components/body/Recipes";
 import Food from "./Components/body/Food";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path='/Kitchen' element={<Kitchen />} />
         <Route path='/PopularRecipes' element={<PopularRecipes />} />
         <Route path='/AboutUs' element={<AboutUs />} />
-        <Route path='/ContactUs' element={<ContactUs />} />
+        <Route path='/ContactUs' element={<Footer />} />
         <Route path='/Food' element={<Food />} />
       </Routes>
     </div>
