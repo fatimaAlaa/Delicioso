@@ -15,7 +15,6 @@
     text-align: start;
     height: fit-content;
     padding: 30px;
-    /* border: 1px solid red; */
     font-family: PoppinsR;
 }
 
@@ -26,8 +25,8 @@
     align-items: center;
     align-content: center;
     padding: 0% 3%;
-    /* margin-top: 10%; */
 }
+
 .aboutUs .aboutUstitle h1 {
     font-size: 4rem;
     margin: 0px;

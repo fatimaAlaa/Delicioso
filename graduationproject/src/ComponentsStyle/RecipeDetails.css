@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'PoppinsM';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsR';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+.details {
+    font-family: PoppinsR;
+    color: white;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.info {
+    padding: 0px 20px;
+}
+
+.info h1 {
+    font-family: PoppinsM;
+    font-size: 3rem;
+}
+
+.Recipeimg {
+    margin-left: 5%;
+}
+
+.Recipeimg img {
+    border-radius: 50px;
+}

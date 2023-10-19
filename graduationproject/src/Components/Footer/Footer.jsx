@@ -10,15 +10,9 @@ const Footer = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // You can implement the email submission logic here, for example, using an API.
-        // For simplicity, we'll just display the submitted email and message in this example.
-
         console.log('Submitted Email:', email);
         console.log('Submitted Message:', message);
 
-        // You can add code to send the email to your specified address (fatimaalgburi@gmail.com).
-
-        // Clear the form fields after submission.
         setEmail('');
         setMessage('');
     };

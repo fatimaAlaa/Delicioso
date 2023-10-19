@@ -7,12 +7,13 @@
     font-family: 'PoppinsM';
     src: url('../fonts/Poppins-Medium.ttf');
 }
-.nb{
-    /* position: fixed; */
+
+.nb {
     width: 100%;
     background-color: #0c0c0c;
     z-index: 1;
 }
+
 .navbar {
     margin-top: 30px;
     display: grid;
@@ -21,11 +22,9 @@
     padding-bottom: 20px;
     align-items: center;
     font-family: PoppinsM;
-    /* background-color: wheat; */
 }
 
 .img {
-    /* border: 1px solid yellow; */
     width: fit-content;
     margin-left: 20px;
 }
@@ -36,8 +35,6 @@
     grid-template-columns: repeat(5, 0.5fr);
     text-align: center;
     width: 80%;
-    /* border: 1px solid yellow; */
-
 }
 
 .navbar .link {
@@ -47,10 +44,8 @@
 }
 
 .link:hover {
-    /* width: fit-content; */
     padding-bottom: 20px;
     border-bottom: 2px solid #d8b564;
-    /* Add a border (line) under the link on hover */
 }
 
 

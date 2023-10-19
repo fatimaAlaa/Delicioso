@@ -15,35 +15,20 @@
     border-bottom: 2px solid;
     width: fit-content;
     color: white;
-    /* margin-top: 10%; */
     margin-bottom: 5%;
     overflow-x: hidden;
 }
 
 .cardss {
     margin-left: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
+    margin-bottom: 5%;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1%;
-    width: 100%;
     font-family: PoppinsR;
-    overflow-x: hidden;
 }
 
-.cardd {
-    width: 400px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 2vw;
-    border-radius: 20px;
-    color: black;
-    border: 1px solid #a22f00;
-    border-top: none;
-    overflow-x: hidden;
-}
 
 .cardd p {
     text-align: start;
@@ -60,15 +45,12 @@
     height: auto;
 }
 
-button {
-    width: fit-content;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    width: 100px;
-    height: 40px;
+.recipebutton {
+    width: 50%;
+    text-decoration: none;
+    font-size: 1vw;
+    background-color: #c84917;
+    padding: 10px;
+    margin: 20px 0px;
     border-radius: 10px;
-    background-color: #a22f00;
-    border: none;
-    color: white;
-
 }

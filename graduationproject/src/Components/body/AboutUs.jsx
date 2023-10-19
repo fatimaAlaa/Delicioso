@@ -1,6 +1,6 @@
 import chef from '../../Assests/chef.jpg'
 import '../../ComponentsStyle/aboutUs.css'
-export function AboutUs() {
+export default function AboutUs() {
     return (
         <div className='aboutUs'>
             <div className='aboutUstitle'>
@@ -13,15 +13,9 @@ export function AboutUs() {
                 </p>
             </div>
             <div className='chef'>
-            <img src={chef} alt="chef"  />
+                <img src={chef} alt="chef" />
             </div>
 
         </div>
-    )
-}
-
-export function ContactUs() {
-    return (
-        <div style={{ color: 'white' }}>Templates Page</div>
     )
 }

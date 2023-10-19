@@ -14,14 +14,14 @@
     border-bottom: 2px solid;
     width: fit-content;
     color: white;
-    /* margin: 10%; */
 }
 
 .cards {
     margin: 20px;
     display: flex;
+    flex-direction: row;
     gap: 2%;
-    width: 50%;
+    width: fit-content;
     font-family: PoppinsR;
     margin-bottom: 10%;
 }
@@ -64,6 +64,7 @@
     color: #000;
     font-size: 1vw;
 }
-.Foodlink{
+
+.Foodlink {
     text-decoration: none;
 }
