@@ -89,6 +89,8 @@ textarea {
 .submit {
     margin-left: 15%;
     width: 52%;
+    height: 40px;
+    border-radius: 10px;
     background-color: #b89542;
 }
 

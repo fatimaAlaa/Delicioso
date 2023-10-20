@@ -45,6 +45,13 @@
     margin-bottom: 20px;
 }
 
+.noRecipe {
+    margin: 80px;
+    text-align: center;
+    font-family: PoppinsR;
+    color: wheat;
+}
+
 .recipes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -56,7 +63,7 @@
 .recipe {
     padding-bottom: 15px;
     border-radius: 0px;
-    width: 400px;
+    width: 25em;
     height: fit-content;
     border: 1px solid wheat;
     border-top: none;
@@ -65,7 +72,9 @@
 }
 
 .recipe .recipeInfo {
-    padding: 5px 15px;
+    padding: 0px 15px;
+    padding-bottom: 20px;
+
 }
 
 .recipe .image img {
@@ -77,11 +86,24 @@
     margin-bottom: 30px;
 }
 
+.ingredients img:hover {
+    cursor: pointer;
+}
+
 .btnLink {
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 1em;
     background-color: #c84917;
     padding: 10px;
-    margin: 20px 0px;
+    margin: 40px 0px;
     border-radius: 10px;
+    font-family: PoppinsR;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .recipes {
+        
+        grid-template-columns: 1fr;
+    }
 }

@@ -16,6 +16,8 @@
     height: fit-content;
     padding: 30px;
     font-family: PoppinsR;
+    overflow: hidden;
+
 }
 
 .aboutUs .aboutUstitle {

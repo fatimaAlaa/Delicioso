@@ -41,7 +41,7 @@
 
 .card span {
     background-color: rgb(55, 55, 55);
-    width: 300px;
+    width: 80%;
     color: white;
     opacity: 0.9;
 }
@@ -62,9 +62,24 @@
 .link {
     text-decoration: none;
     color: #000;
-    font-size: 1vw;
+    font-size: 2em;
 }
 
 .Foodlink {
     text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .Foodlink {
+        margin-top: 30px;
+
+    }
+    .card {
+        width: 30em;
+        height: 25em;
+    }
 }

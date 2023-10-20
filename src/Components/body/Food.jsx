@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useLocation, Link } from 'react-router-dom'; // Import useLocation
+import React, { useState, useEffect } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import '../../ComponentsStyle/food.css';
 
 export default function Food({ ingredients, Recipes }) {
@@ -29,6 +29,10 @@ export default function Food({ ingredients, Recipes }) {
         )
     );
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='food'>
             <center>
@@ -50,23 +54,34 @@ export default function Food({ ingredients, Recipes }) {
                     ))
                 }
             </div>
-            <div className='recipes'>
-                {
-                    matchingRecipes.map((recipe, index) => (
-                        <div className='recipe' key={index}>
-                            <div className='image'>
-                                <img src={recipe.img} alt="" />
-                            </div>
-                            <div className='recipeInfo'>
-                                <h1>{recipe.Name}</h1>
-                                <p>{recipe.Description}</p>
-                                <p className='Ingredients'>Ingredients: {recipe.ingredients.join(', ')}</p>
-                                <Link className='btnLink' to={`/recipe/${recipe.Name}`}>View Recipe</Link>
-                            </div>
+
+            {
+                matchingRecipes.length === 0 ? (
+                    <div className='noRecipe'>
+                        <h1>No recipes with the selected ingredients.</h1>
+                    </div>
+                ) : (
+                    <center>
+                        <div className='recipes'>
+                            {
+                                matchingRecipes.map((recipe, index) => (
+                                    <div className='recipe' key={index}>
+                                        <div className='image'>
+                                            <img src={recipe.img} alt="" />
+                                        </div>
+                                        <div className='recipeInfo'>
+                                            <h1>{recipe.Name}</h1>
+                                            <p>{recipe.Description}</p>
+                                            <p className='Ingredients'>Ingredients: {recipe.ingredients.join(', ')}</p>
+                                            <Link className='btnLink' to={`/recipe/${recipe.Name}`}>View Recipe</Link>
+                                        </div>
+                                    </div>
+                                ))
+                            }
                         </div>
-                    ))
-                }
-            </div>
+                    </center>
+                )
+            }
         </div>
     );
 }

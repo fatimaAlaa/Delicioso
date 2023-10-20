@@ -9,15 +9,15 @@
 }
 
 .nb {
-    width: 100%;
-    background-color: #0c0c0c;
-    z-index: 1;
+    width: 90%;
+    /* z-index: 1; */
 }
 
 .navbar {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 1fr 2fr 1fr; */
     text-align: start;
     padding-bottom: 20px;
     align-items: center;
@@ -26,13 +26,15 @@
 
 .img {
     width: fit-content;
-    margin-left: 20px;
+    margin: 0px 100px 0px 20px;
 }
 
 .navbar .links {
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(5, 0.5fr);
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    /* grid-template-columns: repeat(5, 0.5fr); */
     text-align: center;
     width: 80%;
 }
@@ -62,4 +64,44 @@
     background-color: #c19e4f;
     color: white;
     font-family: PoppinsM;
+}
+
+.Dialog {
+    width: 100%;
+    background-color: #1111;
+    height: fit-content;
+    /* border: 1px solid red; */
+}
+
+.fabnav {
+    display: none;
+}
+
+.fabButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        display: none;
+    }
+
+    .fabnav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+        /* flex-direction: row; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        text-align: end;
+        padding-bottom: 20px;
+        align-items: center;
+        width: 100%;
+        font-family: PoppinsM;
+    }
+
+    .link:hover {
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
 }

@@ -4,7 +4,7 @@ import '../../ComponentsStyle/Kitchen.css';
 export default function Kitchen() {
     return (
         <center>
-            <div className='kitchen'>
+            <div className='kitchen' id='Kitchen'>
                 <h1>Choose Kitchen</h1>
             </div>
             <div className='cards'>

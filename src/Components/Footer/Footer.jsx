@@ -3,7 +3,7 @@ import insta from '../../Assests/instagram.png'
 import linkedin from '../../Assests/linkedin.png'
 import React, { useState } from 'react';
 
-const Footer = () => {
+export default function Footer(){
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
@@ -18,7 +18,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className='footer'>
+        <footer className='footer' id='ContactUs'>
             <center>
                 <div className="footer-content">
                     <div className='title'>
@@ -65,4 +65,3 @@ const Footer = () => {
     );
 };
 
-export default Footer;

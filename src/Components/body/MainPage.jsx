@@ -24,6 +24,9 @@ export default function MainPage({ Recipes }) {
     return (
         <div>
             <div className="body">
+                <div className="bg">
+                    <img src={bg} alt="bg" />
+                </div>
                 <center>
                     <div className="title">
                         <p>Let's Cook as CHEF!</p>
@@ -54,9 +57,7 @@ export default function MainPage({ Recipes }) {
                         }
                     </div>
                 </center>
-                <div className="bg">
-                    <img src={bg} alt="bg" />
-                </div>
+
             </div>
             <Kitchen />
             <Footer />
